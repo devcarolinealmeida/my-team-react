@@ -1,0 +1,13 @@
+.container-form {
+    display: flex;
+    justify-content: center;
+    margin: 3em auto;
+}
+
+.container-form form {
+    max-width: 80vw;
+    background-color: #F6F6F6;
+    padding: 1em 3em;
+    border-radius: 20px;
+    box-shadow: 8px 8px 16px rgba(0,0,0,0.08);
+}
