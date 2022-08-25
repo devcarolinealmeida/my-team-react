@@ -14,9 +14,13 @@ const Form = () => {
     'Offense',
   ]
 
+  const handleSubmit = (event) => {
+    event.preventDefault()
+  }
+
   return (
     <section className="container-form">
-      <form>
+      <form onSubmit={handleSubmit}>
         <h2>Enter your player data to create the card</h2>
         <InputText label="Name:" placeholder="Enter player name" />
         <InputText label="Team:" placeholder="Enter the team he/she plays for" />
