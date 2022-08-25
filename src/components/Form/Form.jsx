@@ -1,4 +1,5 @@
 import React from "react";
+import Button from "../Button/Button";
 import InputText from '../InputText/InputText'
 import Select from "../Select/Select";
 
@@ -21,6 +22,7 @@ const Form = () => {
         <InputText label="Team:" placeholder="Enter the team he/she plays for" />
         <InputText label="Image:" placeholder="Enter a URL player image" />
         <Select label="Position:" itens={positions}/>
+        <Button>Create Card</Button>
       </form>
     </section>
   );
