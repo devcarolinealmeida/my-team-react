@@ -3,11 +3,8 @@ import './InputText.css'
 
 const InputText = (props) => {
 
-    const [text, setText] = useState('')
-
     const handleText = (event) => {
-        setText(event.target.value)
-        console.log(text)
+        props.addInput(event.target.value)
     }
     return ( 
         <div className='input-text'>
