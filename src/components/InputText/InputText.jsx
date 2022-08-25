@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+
 import './InputText.css'
 
 const InputText = (props) => {
