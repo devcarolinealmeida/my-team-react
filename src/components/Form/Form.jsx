@@ -22,9 +22,9 @@ const Form = () => {
     <section className="container-form">
       <form onSubmit={handleSubmit}>
         <h2>Enter your player data to create the card</h2>
-        <InputText label="Name:" placeholder="Enter player name" />
-        <InputText label="Team:" placeholder="Enter the team he/she plays for" />
-        <InputText label="Image:" placeholder="Enter a URL player image" />
+        <InputText requiredField={true} label="Name:" placeholder="Enter player name" />
+        <InputText requiredField={true} label="Team:" placeholder="Enter the team he/she plays for" />
+        <InputText requiredField={true} label="Image:" placeholder="Enter a URL player image" />
         <Select label="Position:" itens={positions}/>
         <Button>Create Card</Button>
       </form>
