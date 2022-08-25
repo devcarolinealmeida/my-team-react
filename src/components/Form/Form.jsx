@@ -25,7 +25,7 @@ const Form = () => {
         <InputText requiredField={true} label="Name:" placeholder="Enter player name" />
         <InputText requiredField={true} label="Team:" placeholder="Enter the team he/she plays for" />
         <InputText requiredField={true} label="Image:" placeholder="Enter a URL player image" />
-        <Select label="Position:" itens={positions}/>
+        <Select requiredField={true} label="Position:" itens={positions}/>
         <Button>Create Card</Button>
       </form>
     </section>
