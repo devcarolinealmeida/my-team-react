@@ -5,9 +5,10 @@ import Form from './components/Form/Form';
 
 function App() {
 
-  const [player, setPlayer] = useState([])
+  const [players, setPlayer] = useState([])
 
   const addPlayer = (player) => {
+    setPlayer([...players, player])
     console.log(player)
   }
 
