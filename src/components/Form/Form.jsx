@@ -5,7 +5,7 @@ import Select from "../Select/Select";
 
 import "./Form.css";
 
-const Form = () => {
+const Form = (props) => {
   const positions = ["Goalkeeper", "Defense", "Midfielders", "Offense"];
 
   const [name, setName] = useState("");
@@ -15,7 +15,12 @@ const Form = () => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    console.log(name, team, image, position);
+    props.handlePlayer({
+      name,
+      team,
+      image,
+      position
+    });
   };
 
   return (
