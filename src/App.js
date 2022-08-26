@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import Banner from './components/Banner/Banner';
 import Form from './components/Form/Form';
+import MyTeam from './components/MyTeam/MyTeam';
 
 
 function App() {
@@ -16,6 +17,10 @@ function App() {
     <div className="App">
       <Banner />
       <Form handlePlayer={player => addPlayer(player)}/>
+      <MyTeam positionNome={"Goalkeepers"}/>
+      <MyTeam positionNome={"Defense"}/>
+      <MyTeam positionNome={"Midfielders"}/>
+      <MyTeam positionNome={"Offense"}/>
     </div>
   );
 }
