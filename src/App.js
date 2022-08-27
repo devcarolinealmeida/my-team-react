@@ -8,6 +8,29 @@ function App() {
 
   const [players, setPlayer] = useState([])
 
+  const positions = [
+    {
+      name: 'Goalkeeper',
+      firstColor: '#82CFFA',
+      secondColor: '#E8F8FF'
+    },
+    {
+      name: 'Defense',
+      firstColor: '#A6D157',
+      secondColor: '#F0F8E2'
+    },
+    {
+      name: 'Midfielders',
+      firstColor: '#FFBA05',
+      secondColor: '#FFF5D9'
+    },
+    {
+      name: 'Offense',
+      firstColor: '#FF8A29',
+      secondColor: '#FFEEDF'
+    },
+  ]
+
   const addPlayer = (player) => {
     setPlayer([...players, player])
     console.log(player)
@@ -17,10 +40,7 @@ function App() {
     <div className="App">
       <Banner />
       <Form handlePlayer={player => addPlayer(player)}/>
-      <MyTeam positionNome={"Goalkeepers"}/>
-      <MyTeam positionNome={"Defense"}/>
-      <MyTeam positionNome={"Midfielders"}/>
-      <MyTeam positionNome={"Offense"}/>
+      {positions.map(position => <MyTeam key={position.name} positionName={position.name} firstColor={position.firstColor} secondColor={position.secondColor}/>)}
     </div>
   );
 }
