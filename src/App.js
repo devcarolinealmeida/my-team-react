@@ -39,7 +39,7 @@ function App() {
   return (
     <div className="App">
       <Banner />
-      <Form handlePlayer={player => addPlayer(player)}/>
+      <Form positions={positions.map(position => position.name)} handlePlayer={player => addPlayer(player)}/>
       {positions.map(position => <MyTeam key={position.name} positionName={position.name} firstColor={position.firstColor} secondColor={position.secondColor}/>)}
     </div>
   );

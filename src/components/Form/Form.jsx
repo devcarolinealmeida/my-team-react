@@ -6,7 +6,7 @@ import Select from "../Select/Select";
 import "./Form.css";
 
 const Form = (props) => {
-  const positions = ["Goalkeeper", "Defense", "Midfielders", "Offense"];
+  // const positions = ["Goalkeeper", "Defense", "Midfielders", "Offense"];
 
   const [name, setName] = useState("");
   const [team, setTeam] = useState("");
@@ -53,7 +53,7 @@ const Form = (props) => {
           addInput={text => setPosition(text)}
           requiredField={true} 
           label="Position:" 
-          itens={positions} 
+          itens={props.positions} 
         />
         <Button>Create Card</Button>
       </form>
