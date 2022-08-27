@@ -40,7 +40,14 @@ function App() {
     <div className="App">
       <Banner />
       <Form positions={positions.map(position => position.name)} handlePlayer={player => addPlayer(player)}/>
-      {positions.map(position => <MyTeam key={position.name} positionName={position.name} firstColor={position.firstColor} secondColor={position.secondColor}/>)}
+      
+      {positions.map(position => <MyTeam 
+      key={position.name} 
+      positionName={position.name} 
+      firstColor={position.firstColor} 
+      secondColor={position.secondColor}
+      players={players}
+      />)}
     </div>
   );
 }
