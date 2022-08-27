@@ -1,0 +1,36 @@
+.container-player {
+    max-width: 15em;
+    max-height: 30em;
+}
+
+.header-player {
+    background-color:  #F0F0F0;
+    border-radius: 10px 10px 0px 0px;
+}
+img {
+    width: 10em;
+    border-radius: 30px;
+    position: relative;
+    bottom: -3em;
+}
+
+.footer-player {
+    background: #FFFFFF;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.08);
+    border-radius: 0px 0px 10px 10px;
+    padding-top: 3em;
+    padding-bottom: 2.5em;
+}
+
+.footer-player h4 {
+    color: #6278F7;
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 1em;
+}
+
+.footer-player h5 {
+    font-size: .8em;
+    color: #212121;
+    font-style: italic;
+}
