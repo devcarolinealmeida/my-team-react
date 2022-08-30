@@ -12,22 +12,22 @@ function App() {
     {
       name: 'Goalkeeper',
       firstColor: '#82CFFA',
-      secondColor: '#E8F8FF'
+      secondColor: '#E8F8FF',
     },
     {
       name: 'Defense',
       firstColor: '#A6D157',
-      secondColor: '#F0F8E2'
+      secondColor: '#F0F8E2',
     },
     {
       name: 'Midfielders',
       firstColor: '#FFBA05',
-      secondColor: '#FFF5D9'
+      secondColor: '#FFF5D9',
     },
     {
       name: 'Offense',
       firstColor: '#FF8A29',
-      secondColor: '#FFEEDF'
+      secondColor: '#FFEEDF',
     },
   ]
 
@@ -46,7 +46,7 @@ function App() {
       positionName={position.name} 
       firstColor={position.firstColor} 
       secondColor={position.secondColor}
-      players={players}
+      players={players.filter(player => player.position === position.name)}
       />)}
     </div>
   );
