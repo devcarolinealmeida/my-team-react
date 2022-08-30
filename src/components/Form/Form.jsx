@@ -21,6 +21,10 @@ const Form = (props) => {
       image,
       position
     });
+    setName('')
+    setTeam('')
+    setImage('')
+    setPosition('')
   };
 
   return (
