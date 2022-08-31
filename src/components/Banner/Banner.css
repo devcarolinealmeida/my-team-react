@@ -1,13 +1,14 @@
 .banner {
-    text-align: center;
+    /* text-align: center;
     background-image: url(/public/images/banner_soccer.png);
-    background-size: cover;
+    background-size:cover;
     background-repeat:no-repeat;
     height: 40vh;
-    margin-top: -40px;
+    width: 100%;
+    margin-top: -50px;
     display: flex;
     justify-content:left;
-    align-items: center;
+    align-items: center; */
 }
 
 .banner h2 {
@@ -16,8 +17,10 @@
     padding: .5em;
     border-radius: 10px;
     margin-left: 3em;
-   
+    top: 9vh;
+    position: absolute;
 }
-/* .banner img {
+.banner img {
     max-width: 100%;
-} */
+    position: relative;
+}
