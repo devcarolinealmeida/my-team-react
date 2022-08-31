@@ -1,0 +1,17 @@
+footer {
+    background-color: #6278F7;
+    padding: .5em;
+}
+
+.container-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1em auto;
+    width: 70vw;
+    font-size: .8em;
+}
+
+.container-footer img {
+    height: 5vw;
+}

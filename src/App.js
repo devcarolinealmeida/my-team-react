@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import Banner from './components/Banner/Banner';
+import Footer from './components/Footer/Footer';
 import Form from './components/Form/Form';
 import MyTeam from './components/MyTeam/MyTeam';
 
@@ -48,6 +49,7 @@ function App() {
       secondColor={position.secondColor}
       players={players.filter(player => player.position === position.name)}
       />)}
+      <Footer />
     </div>
   );
 }
