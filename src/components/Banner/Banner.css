@@ -1,5 +1,5 @@
-.banner {
-    /* text-align: center;
+/* .banner {
+     text-align: center;
     background-image: url(/public/images/banner_soccer.png);
     background-size:cover;
     background-repeat:no-repeat;
@@ -8,8 +8,8 @@
     margin-top: -50px;
     display: flex;
     justify-content:left;
-    align-items: center; */
-}
+    align-items: center; 
+} */
 
 .banner h2 {
     color: #fff;
