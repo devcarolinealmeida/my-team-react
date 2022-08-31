@@ -1,8 +1,23 @@
 .banner {
-    background-color: #6278f7;
     text-align: center;
+    background-image: url(/public/images/banner_soccer.png);
+    background-size: cover;
+    background-repeat:no-repeat;
+    height: 40vh;
+    margin-top: -40px;
+    display: flex;
+    justify-content:left;
+    align-items: center;
 }
 
-.banner img {
-    max-width: 100%;
+.banner h2 {
+    color: #fff;
+    background-color: rgba(0,0,0,0.4);
+    padding: .5em;
+    border-radius: 10px;
+    margin-left: 3em;
+   
 }
+/* .banner img {
+    max-width: 100%;
+} */
