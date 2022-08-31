@@ -50,7 +50,7 @@ const Form = (props) => {
           addInput={text => setImage(text)}
           requiredField={true}
           label="Image:"
-          placeholder="Enter a URL player image"
+          placeholder="Enter a URL player image (vertical picture)"
         />
         <Select 
           text={position}

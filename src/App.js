@@ -34,7 +34,6 @@ function App() {
 
   const addPlayer = (player) => {
     setPlayer([...players, player])
-    console.log(player)
   }
 
   return (
