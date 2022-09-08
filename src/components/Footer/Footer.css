@@ -1,5 +1,5 @@
 footer {
-    background-color: #6278F7;
+    background-color: #000000;
     padding: .5em;
 }
 
@@ -10,8 +10,16 @@ footer {
     margin: 1em auto;
     width: 70vw;
     font-size: .8em;
+    color: #ffffff;
 }
 
 .container-footer img {
-    height: 5vw;
+    height: 1.3rem;
+    filter: invert(1);
 }
+
+.footer-icons {
+    margin-left: 1em;
+    color: #ffffff;
+}
+

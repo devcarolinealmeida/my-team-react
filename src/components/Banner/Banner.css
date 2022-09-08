@@ -1,26 +1,23 @@
-/* .banner {
-     text-align: center;
-    background-image: url(/public/images/banner_soccer.png);
-    background-size:cover;
-    background-repeat:no-repeat;
-    height: 40vh;
+.banner {
+    text-align: center;
+    background-color: black;
     width: 100%;
-    margin-top: -50px;
     display: flex;
-    justify-content:left;
+    justify-content:center;
     align-items: center; 
-} */
+}
 
 .banner h2 {
     color: #fff;
     background-color: rgba(0,0,0,0.4);
     padding: .5em;
     border-radius: 10px;
-    margin-left: 3em;
-    top: 6vh;
+    top: 1rem;
     position: absolute;
+    font-size: 1rem;
 }
 .banner img {
-    max-width: 100%;
+    width: 70%;
+    height: 80%;
     position: relative;
 }

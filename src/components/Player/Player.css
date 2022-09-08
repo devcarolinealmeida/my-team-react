@@ -8,10 +8,11 @@
 .header-player {
     background-color:  #F0F0F0;
     border-radius: 10px 10px 0px 0px;
+    height: 110px;
 }
 .header-player img {
-    max-width: 80%;
-    height: 200px;
+    max-width: 120px;
+    max-height: 150px;
     border-radius: 30px;
     position: relative;
     bottom: -2em;
@@ -23,14 +24,15 @@
     border-radius: 0px 0px 10px 10px;
     padding-top: .5em;
     padding-bottom: .5em;
+    height: 180px;
 }
 
 .footer-player h4 {
     font-size: 1.2em;
     font-weight: bold;
     /* margin-bottom: 1em;
-    margin-top: 2em; */
-    margin: 2em .1em 0 .1em;
+    margin-top: 5em;  */
+    margin: 4em .5em 0 .5em; 
     
 }
 
