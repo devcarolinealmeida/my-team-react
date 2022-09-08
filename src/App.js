@@ -7,7 +7,20 @@ import MyTeam from './components/MyTeam/MyTeam';
 
 function App() {
 
-  const [players, setPlayer] = useState([])
+  const [players, setPlayer] = useState([
+    {
+      name: 'Thibaut-Courtois',
+      team: 'Real Madrid',
+      image: 'https://biraon.com/wp-content/uploads/2022/05/Goleiro-Gigante-Thibaut-Courtois.jpg',
+      position: 'Goalkeeper'
+    },
+    {
+      name: 'Neymar Jr',
+      team: 'PSG',
+      image: 'https://i.pinimg.com/736x/f2/22/2c/f2222ccb7e81f8c47028fa1e0074a94c.jpg',
+      position: 'Offense'
+    }
+  ])
 
   const positions = [
     {

@@ -1,6 +1,6 @@
 .container-player {
     width: 10em;
-    height: 20em;
+    max-height: 20em;
     margin-bottom: 2.5em;
     position: relative;
 }
@@ -10,26 +10,28 @@
     border-radius: 10px 10px 0px 0px;
 }
 .header-player img {
-    width: 80%;
+    max-width: 80%;
+    height: 200px;
     border-radius: 30px;
     position: relative;
-    bottom: -3em;
+    bottom: -2em;
 }
 
 .footer-player {
     background: #FFFFFF;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.08);
     border-radius: 0px 0px 10px 10px;
-    padding-top: 2em;
+    padding-top: .5em;
     padding-bottom: .5em;
 }
 
 .footer-player h4 {
-    color: #6278F7;
     font-size: 1.2em;
     font-weight: bold;
-    margin-bottom: 1em;
-    margin-top: 2em;
+    /* margin-bottom: 1em;
+    margin-top: 2em; */
+    margin: 2em .1em 0 .1em;
+    
 }
 
 .footer-player h5 {
