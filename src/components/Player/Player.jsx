@@ -5,8 +5,13 @@ import { AiFillCloseCircle } from 'react-icons/ai';
 const Player = ( { name, team, image, colorBackground, toDelete } ) => {
     return (
         <div className='container-player'>
-            <AiFillCloseCircle size={25} className='btn-delete' onClick={toDelete}/>
-            <div className='header-player' style={{backgroundColor: colorBackground}}>
+            <AiFillCloseCircle 
+                size={25} 
+                className='btn-delete' 
+                onClick={() => toDelete(name)}
+            />
+            <div className='header-player' 
+                style={{backgroundColor: colorBackground}}>
                 <img src={image} alt={name} />
             </div>
             <div className='footer-player'>

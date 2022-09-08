@@ -49,8 +49,8 @@ function App() {
     setPlayer([...players, player])
   }
 
-  function deletePlayer() {
-    console.log("deletando jogador")
+  function deletePlayer(name) {
+    setPlayer(players.filter(player => player.name !== name))
   }
 
   return (
