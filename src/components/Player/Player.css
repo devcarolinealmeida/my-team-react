@@ -2,6 +2,7 @@
     width: 10em;
     height: 20em;
     margin-bottom: 2.5em;
+    position: relative;
 }
 
 .header-player {
@@ -35,4 +36,11 @@
     font-size: .8em;
     color: #212121;
     font-style: italic;
+}
+
+.btn-delete {
+    position: absolute;
+    right: -10px;
+    top: -10px;
+    
 }

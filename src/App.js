@@ -36,17 +36,23 @@ function App() {
     setPlayer([...players, player])
   }
 
+  function deletePlayer() {
+    console.log("deletando jogador")
+  }
+
   return (
     <div className="App">
       <Banner />
       <Form positions={positions.map(position => position.name)} handlePlayer={player => addPlayer(player)}/>
       
-      {positions.map(position => <MyTeam 
+      {positions.map(position => 
+      <MyTeam 
       key={position.name} 
       positionName={position.name} 
       firstColor={position.firstColor} 
       secondColor={position.secondColor}
       players={players.filter(player => player.position === position.name)}
+      toDelete={deletePlayer}
       />)}
       <Footer />
     </div>
